@@ -10,9 +10,9 @@ int factorial(int n)
 }
 void main()
 {
-    int n, facto;
+    int n, fact;
     printf("Enter Any Number ");
-    scanf("%d", n);
-    facto = factorial(n);
-    printf("Factorial Of %d is %d ",n,facto);
+    scanf("%d",&n);
+    fact = factorial(n);
+    printf("Factorial Of %d is %d ",n,fact);
 }
