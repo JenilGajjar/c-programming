@@ -1,18 +1,18 @@
 #include <stdio.h>
 int factorial(int n)
 {
-    int fact = 1, i;
-    for (i = 1; i <= n; i++)
+    if(n==0 || n==1)
     {
-        fact = fact * i;
+        return 1;
     }
-    return fact;
+    return(n*factorial(n-1));
+    
 }
 void main()
 {
-    int n, fact;
+    int n,fact;
     printf("Enter Any Number ");
-    scanf("%d",&n);
-    fact = factorial(n);
-    printf("Factorial Of %d is %d ",n,fact);
+    scanf("%d", &n);
+    fact=factorial(n);
+    printf("\n Factorial of %d is %d ",n,fact);
 }
