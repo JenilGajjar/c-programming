@@ -1,19 +1,14 @@
 #include <stdio.h>
+#include <string.h>
 #define n 100
 void function(char str[n])
 {
-    int j, k;
-    for (int i = 0; str[i] != '\0'; i++)
+    int i, j;
+    for (i = 0; str[i] != '\0'; i += 2)
     {
-        for (j = i + 1; str[j] != '\0'; j++)
+        for (j = 0; j < str[i + 1] - '0'; j++)
         {
-            if (str[j] >= '0' && str[j] <= '9')
-                { 
-                for (k = 1; k <= str[j]; k++)
-                {
-                    printf("%c", str[i]);
-                }
-                }
+            printf("%c", str[i]);
         }
     }
 }
