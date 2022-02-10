@@ -9,7 +9,7 @@ void function(char str[n])
         {
             if (str[j] >= '0' && str[j] <= '9')
                 { 
-                for (k = 0; k <= str[j]; k++)
+                for (k = 1; k <= str[j]; k++)
                 {
                     printf("%c", str[i]);
                 }
