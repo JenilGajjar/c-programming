@@ -10,7 +10,7 @@ void main()
 }   
 void count_One_Zero(char str[n])
 {   int one=0,zero=0;
-    for (int i = 0; i < str[i]!='\0'; i++)
+    for (int i = 0; str[i]!='\0'; i++)
     {
         if(str[i]=='0')
         {
