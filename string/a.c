@@ -8,9 +8,11 @@ void function(char str[n])
         for (j = i + 1; str[j] != '\0'; j++)
         {
             if (str[j] >= '0' && str[j] <= '9')
+                { 
                 for (k = 0; k <= str[j]; k++)
                 {
                     printf("%c", str[i]);
+                }
                 }
         }
     }
